@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula18</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+
+    <nav class="navbar nav-bar bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="image/CloudFilms - Logo.png" alt="Logo" width="80" height="70">
+
+<nav class="navbar m-auto navbar-expand-lg nav-bar dark bg-dark">
+  <div class="container-fluid">
+    <a class="nav-link active text-white" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="contato.html">Contatos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="infodosite.html">Termos&Privacidade</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="categorias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorias
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Ação</a></li>
+            <li><a class="dropdown-item" href="#">Terror</a></li>
+
+           <!-- <li><hr class="dropdown-divider"></li>-->
+
+            <li><a class="dropdown-item" href="#">Comédia</a></li>
+            <li><a class="dropdown-item" href="#">Romance</a></li>
+            <li><a class="dropdown-item" href="#">Suspense</a></li>
+            <li><a class="dropdown-item" href="#">Infantil</a></li>
+          </ul>
+        </li>
+      
+      </ul>
+      <form class="d-flex"  role="search">
+        <input class="form-control me-2" type="search" placeholder="Digite o nome do filme" aria-label="Search">
+        <button class="btn btn-outline-success text-white border white" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+
+<!--FIM DO MENU-->
+
+<main>
+<section>
+<div id="carouselExampleCaptions" class="carousel slide mt-1">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <iframe src="https://www.youtube.com/embed/JEWFRJ4vZAw" 
+        frameborder="1" width="1370"  height="400" class="video1"></iframe>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Wonka</h5>
+          <p>Data de lançamento: 14 de dezembro de 2023.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <iframe src="https://www.youtube.com/embed/TGdek7l9pis" 
+  frameborder="1" width="1370"  height="400" class="video1"></iframe>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Besouro Azul</h5>
+          <p>Data de lançamento: 17 de agosto de 2023.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <iframe src="https://www.youtube.com/embed/KCdhf_lcAks" 
+  frameborder="1" width="1370"  height="400" class="video1"></iframe>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Freira 2</h5>
+          <p>Data de lançamento: 7 de setembro de 2023.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</section>
+</main>
+
+<section>
+  
+    <h1 class="t_top">TOP FILMES DA SEMANA</h1>
+    <div class="row justify-content-around m-0">
+    <div class="card" style="width: 18rem;" >
+        <img src="image/Super mario bross.jpg" class="card-film1" alt="Super Mario Bros: O Filme">
+        <div class="card-body">
+          <h5 class="card-title">Super Mario Bros: O Filme</h5>
+          <p class="card-text">Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de 
+            tudo para conseguir reinar em todos os lugares.</p>
+            <strong>Data de lançamento:</strong> 6 de abril de 2023 <br><br>
+          <a href="https://www.adorocinema.com/filmes/filme-234099/" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="image/guardioes-da-galaxia.webp" class="card-film2" alt="Guardiões da Galáxia Vol. 3"">
+        <div class="card-body">
+          <h5 class="card-title">Guardiões da Galáxia Vol. 3</h5>
+          <p class="card-text">Peter Quill deve reunir sua equipe para defender o universo e proteger um dos seus. Se a 
+            missão não for totalmente bem-sucedida, isso pode levar ao fim dos Guardiões.</p>
+            <strong>Data de lançamento:</strong> 4 de maio de 2023 <br><br>
+          <a href="https://www.adorocinema.com/filmes/filme-246641/" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="image/Aranhaverso.jpg" class="card-film3" alt="Homem-Aranha: Através do Aranhaverso">
+        <div class="card-body d-block">
+          <h5 class="card-title">Homem-Aranha: Através do Aranhaverso</h5>
+          <p class="card-text">Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso, onde ele encontra 
+            uma equipe encarregada de proteger sua própria existência.</p>
+            <strong>Data de lançamento:</strong> 1 de junho de 2023<br><br>
+          <a href="https://www.adorocinema.com/filmes/filme-269975/" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="image/sobrenatural_porta_vermelha.webp" class="card-film4" alt="Sobrenatural: A Porta Vermelha">
+        <div class="card-body d-block">
+          <h5 class="card-title">Sobrenatural: A Porta Vermelha</h5>
+          <p class="card-text">Josh Lambert segue para o leste para deixar seu filho, Dalton, na faculdade. Mas demônios 
+            reprimidos do passado voltam repentinamente para assombrar os dois.</p>
+            <strong>Data de lançamento:</strong> 6 de julho de 2023<br><br>
+          <a href="https://www.adorocinema.com/filmes/filme-287593/" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section>
+    
+    <h1 class="t_breve">EM BREVE</h1>
+
+    
+        <div class="row justify-content-around m-0">
+            <div class="card" style="width: 18rem;" >
+                <img src="image/Freira2.jpeg" class="card-film5" alt="A Freira 2">
+                <div class="card-body">
+                  <h5 class="card-title">A Freira 2</h5>
+                  <p class="card-text">Em 1956, na França, um padre é assassinado e parece que um mal está se espalhando. Determinada a deter o maligno, 
+                    irmã Irene mais uma vez fica cara a cara com uma força demoníaca.</p>
+                    <strong>Data de lançamento:</strong> 7 de setembro de 2023 <br><br>
+                  <a href="https://www.adorocinema.com/filmes/filme-273411/" class="btn btn-primary">Saiba mais</a>
+                </div>
+              </div>
+
+        
+                <div class="card" style="width: 18rem;" >
+                    <img src="image/five-nights.jpg" class="card-film6" alt="Five Nights at Freddy's - O Pesadelo Sem Fim">
+                    <div class="card-body">
+                      <h5 class="card-title">Five Nights at Freddy's - O Pesadelo Sem Fim</h5>
+                      <p class="card-text">No Freddy Fazbear's Pizza, robôs animados fazem a festa das crianças durante o dia. 
+                        Mas, quando chega a noite, eles se transformam em assassinos psicopatas.</p>
+                        <strong>Data de lançamento:</strong> 27 de setembro de 2023 <br><br>
+                      <a href="https://www.adorocinema.com/filmes/filme-236844/" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                  </div>
+
+                  
+              
+                <div class="card" style="width: 18rem;" >
+                    <img src="image/Megatubarão 2.jpeg" class="card-film7" alt="Megatubarão 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Megatubarão 2</h5>
+                      <p class="card-text">Prepara-te para a maior adrenalina deste verão com "Meg 2: O Regresso do Tubarão Gigante", uma aventura emocionante que ultrapassa o sucesso de bilheteiras de 2018 e leva a ação ainda mais longe, 
+                        em mergulhos mais profundos com enormes Megs e muito mais! Mergulha em águas desconhecidas com Jason Statham.</p>
+                        <strong>Data de lançamento:</strong> 3 de agosto de 2023 <br><br>
+                      <a href="https://www.adorocinema.com/filmes/filme-269170/" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;" >
+                    <img src="image/aquaman 2.jpg" class="card-film8" alt="Aquaman e o Reino Perdido">
+                    <div class="card-body">
+                      <h5 class="card-title">Aquaman e o Reino Perdido</h5>
+                      <p class="card-text">Aquaman and the Lost Kingdom é um próximo filme de super-herói americano baseado no personagem Aquaman da DC Comics. 
+                        Produzido pela DC Films, The Safran Company e Atomic Monster Productions, e distribuído pela Warner Bros. Pictures, pretende ser a sequência de Aquaman e o décimo quinto filme do Universo Estendido</p>
+                        <strong>Data de lançamento:</strong> 25 de dezembro de 2023 <br><br>
+                      <a href="https://www.adorocinema.com/filmes/filme-270235/" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                  </div>
+
+    
+    </section>
+    
+    <section>
+    <h1 class="t_trailers">TRAILERS</h1>
+    
+      <div class="row justify-content-around m-0">
+        <div class="card" style="width: 18rem;" >
+          <iframe src="https://www.youtube.com/embed/96RCGOaNuCM" frameborder="0" ></iframe>
+            <div class="card-body">
+              <h5 class="card-title">O Exorcista</h5>
+              <p class="card-text">O Exorcista: O Devoto, é o próximo filme de terror sobrenatural americano dirigido por David Gordon Green e escrito por Peter Sattler e Green a partir de uma história de Scott Teems, Danny McBride e Green. É a sexta parcela da franquia 
+                O Exorcista e servirá como uma sequência direta de O Exorcista.</p>
+                <strong>Data de lançamento:</strong> 13 de outubro de 2023 <br><br>
+              <a href="https://www.adorocinema.com/filmes/filme-289029/" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+
+              <div class="card" style="width: 18rem;" >
+                <iframe src="https://www.youtube.com/embed/6ADOT3AkWro" frameborder="0" ></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Kraven o Caçador</h5>
+                    <p class="card-text">Kraven, o Caçador é um personagem de quadrinhos da Marvel Comics e um dos vilões do Homem-Aranha. Criado por Stan Lee e Steve Ditko, 
+                      seu nome verdadeiro é Sergei Kravinoff</p>
+                      <strong>Data de lançamento:</strong> 2024 (sem data definida) <br><br>
+                    <a href="https://www.adorocinema.com/filmes/filme-266665/" class="btn btn-primary">Saiba mais</a>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 18rem;" >
+                  <iframe src="https://www.youtube.com/embed/6mQekraNWZM" frameborder="0" ></iframe>
+                  <div class="card-body">
+                      <h5 class="card-title">Gran Turismo: De Jogador a Corredor</h5>
+                      <p class="card-text">Baseado na história de Jann Mardenborough, sobre a concretização do sonho impossível de um jogador de Gran Turismo que viu a sua habilidade na consola levá-lo a vencer um duro processo de seleção e tornar-se um verdadeiro piloto profissional.</p>
+                        <strong>Data de lançamento:</strong> 10 de agosto de 2023 <br><br>
+                      <a href="https://www.adorocinema.com/filmes/filme-222943/" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;" >
+                    <iframe src="https://www.youtube.com/embed/bpoE3gK46nc" frameborder="0" ></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Oppenheimer</h5>
+                        <p class="card-text">O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, 
+                          levando ao desenvolvimento da bomba atômica.</p>
+                          <strong>Data de lançamento:</strong> 20 de julho de 2023 <br><br>
+                        <a href="https://www.adorocinema.com/filmes/filme-296168/" class="btn btn-primary">Saiba mais</a>
+                      </div>
+                    </div>
+
+
+    
+
+    </div>
+    
+    <h1 class="t_redes">REDES SOCIAIS</h1>
+  
+    <footer class="rodape">
+    <img src="image/github.png" width="35" height="35" alt="logo github" class="github">
+    <img src="image/coderhouse_logo.webp" width="35" height="35" alt="logo coderhouse" class="coder">
+    <img src="image/face_preto.png" width="40" height="40" alt="logo facebook" class="face">
+    <img src="image/insta_preto.png" width="40" height="40" alt="logo instagram" class="insta">
+  </footer>
+  
+  
+    <a href="https://github.com/" class="link1">GitHub</a>
+    <a href="https://plataforma-login.coderhouse.com/" class="link2">Coderhouse</a>
+    <a href="https://www.facebook.com/" class="link3">Facebook</a>
+    <a href="https://www.instagram.com/" class="link4">Instagram</a>
+    
+
+</body>
+  </html>
